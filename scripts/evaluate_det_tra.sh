@@ -13,11 +13,11 @@ for dir in $CTC_DIR/*; do
             if [ -d "$batch_dir" ]; then
                 echo "Processing batch directory: $batch_dir"
                 mv "$batch_dir" 01_RES
-                # $SCRIPT_DIR/../EvaluationSoftware/Linux/DETMeasure . 01 3
-                # $SCRIPT_DIR/../EvaluationSoftware/Linux/SEGMeasure . 01 3
-                # $SCRIPT_DIR/../EvaluationSoftware/Linux/TRAMeasure . 01 3
-                $SCRIPT_DIR/count_det.sh 01_RES/DET_log.txt
-                $SCRIPT_DIR/count_tra.sh 01_RES/TRA_log.txt
+                $SCRIPT_DIR/../EvaluationSoftware/Linux/DETMeasure . 01 3
+                $SCRIPT_DIR/../EvaluationSoftware/Linux/SEGMeasure . 01 3
+                $SCRIPT_DIR/../EvaluationSoftware/Linux/TRAMeasure . 01 3
+                $SCRIPT_DIR/summarize_det_errors.sh 01_RES/DET_log.txt
+                $SCRIPT_DIR/summarize_tra_errors.sh 01_RES/TRA_log.txt
                 mv 01_RES "$batch_dir"
             fi
         done
