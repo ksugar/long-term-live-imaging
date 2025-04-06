@@ -5,7 +5,7 @@ This repository contains tools, scripts, and configurations for analyzing long-t
 ## Repository Structure
 
 - **configs/**  
-  Contains configuration files, such as `elephant_main_settings.yaml`, which define the main settings for the analysis by [Elephant](https://elephant-track.github.io).
+  Contains configuration files (e.g. `elephant_main_settings.yaml`), which define the settings for the analysis by [Elephant](https://elephant-track.github.io).
 
 - **CTC_evals/**  
   Includes ground-truth data and evaluation results in [the Cell Tracking Challeng format](https://public.celltrackingchallenge.net/documents/Naming%20and%20file%20content%20conventions.pdf).
@@ -21,6 +21,15 @@ This repository contains tools, scripts, and configurations for analyzing long-t
 
 - **src/**  
   Contains the Python code for the evaluation pipeline and related utilities.
+
+- requirements.txt  
+  Lists the required Python packages for the analysis. Install them using `pip install -r requirements.txt`.
+
+- README.md
+  Provides an overview of the repository, its structure, and instructions for use.
+
+- LICENSE
+  Contains the license information for the repository.
 
 ## Prerequisites
 
@@ -52,7 +61,7 @@ Contributions are welcome! Please submit a pull request or open an issue if you 
 
 ## License
 
-This repository is licensed under [LICENSE_NAME]. Replace this section with the appropriate license information.
+This repository is licensed under [BSD 2-Clause "Simplified" License](./LICENSE).
 
 ## Acknowledgments
 - The Cell Tracking Challenge for providing the evaluation framework and datasets.
